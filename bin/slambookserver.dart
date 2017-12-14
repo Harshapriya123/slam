@@ -7,6 +7,7 @@ import 'dart:io';
  */
 
 final HOST = 'http://tudorluca-slambook.herokuapp.com';
+final SERVER='http://jotdown.server.com';
 final PORT = 4040;
 
 void main() {
