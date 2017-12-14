@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+      
+      
+        
+
+
+      
+      
+        <html>
+      
+      
+          <body>   
+      
+      
+          
+      
+      
+          <polymer-element name="x-slambook-form" extends="form">
+      
+      
+            <template>
+      
+      
+            <style>
+      
+      
+              #slambookform {
+      
+      
+                width: 500px;
+      
+      
+              }
+      
+      
+              
+      
+      
+              .entry {
+      
+      
+                float: left;
+      
+      
+                padding: 3px 3px 3px 3px;
+      
+      
+                width: 100%;
+      
+      
+              }
+      
+      
+              
+      
+      
+              .entry label {
+      
+      
+                display: inline-block;
+      
+      
+                width: 150px;
+      
+      
+                text-align: right;
+      
+      
+                vertical-align: middle;
+      
+      
+              }
+      
+      
+              
+      
+      
+              label.andrews {
+      
+      
+                width:auto;
+      
+      
+              }
+      
+      
+              
+      
+      
+              .submitarea {
+      
+      
+                padding: 10px 10px 10px 10px;
+      
+      
+                margin: 10px 10px 10px 10px;
+      
+      
+                border-style: solid;
+      
+      
+                border-width: 1px;
+      
+      
+                border-color: SlateBlue;
+      
+      
+                clear: left;
+      
+      
+              }
+      
+      
+              
+      
+      
+              .responsetext {
+      
+      
+                padding: 5px 10px 10px 10px;
+      
+      
+                margin: 10px 10px 10px 10px;
+      
+      
+                clear: left;
+      
+      
+                background-color: WhiteSmoke;
+      
+      
+                width: 90%;
+      
+      
+                height: 70px;
+      
+      
+                resize: none;
+      
+      
+              }
+      
+      
+            </style>
+      
+      
+              <div id="slambookform">
+      
+      
+                <div class="entry">
+      
+      
+                  <label>Full Name</label>
+      
+      
+                  <input type="text" value="{{theData['full Name']}}">
+      
+      
+                </div>
+      
+      
+                <div class="entry">
+      
+      
+                  <label>I call you as</label>
+      
+      
+                  <!--<textarea value="{{theData['Callyou']}}"></textarea>-->
+      
+      
+                  <input type="text" value="{{theData['Call you as']}}">
+      
+      
+                </div> 
+      
+      
+                <div class="entry">
+      
+      
+                  <label>Friends Call You as</label>
+      
+      
+                  <input type="color" value="{{theData['Friends Call You as']}}">
+      
+      
+                </div>
+      
+      
+                <div class="entry">
+      
+      
+                  <label>You Like to Call me as</label>
+      
+      
+                  <input type="date" value="{{theData['You Like to Call me as']}}">
+      
+      
+                </div>
+      
+      
+                <div class="entry">
+      
+      
+                  <label>Birth date</label>
+      
+      
+                  <input type="datepicker" value="{{theData['dd--mm--yyyy']}}" >  
+      
+      
+                </div>
+      
+      
+                <div class="entry">
+      
+      
+                  <label>Contact Number</label>
+      
+      
+                  <input type="text" value={{theData['Area Code']}}"> <input typr="text" value={{theData['Phone Number']}}
+      
+      
+                                                                    
+      
+      
+                </div>
+      
+      
+                <div class="entry">
+      
+      
+                 <label>Your favorite song</label>
+      
+      
+                                  </div>
+      
+      
+                 <input type="text" value={{theData['Your favorite Song']}}
+      
+      
+                 <p>a direct link if possible</p>
+      
+      
+                                   </div>
+      
+      
+                 <div class="entry">
+      
+      
+                 <label>Your favorite movie</label> 
+      
+      
+                 <input type="text" value={{theData['Your favorite movie']}}
+      
+      
+                 <p>a direct link if possible</p>
+      
+      
+                 </div>
+      
+      
+                <div class="entry">
+      
+      
+                <label>YOUR HOBBIES</label> 
+      
+      
+                 <input type="text" value={{theData['YOUR HOBBIES']}}
+      
+      
+                  </div>
+      
+      
+                 <div class="entry">
+      
+      
+                 <label>DEFINE LOVE AND FRIENDSHIP IN YOUR WORDS</label> 
+      
+      
+                 <input type="text" value={{theData['DEFINE LOVE AND FRIENDSHIP IN YOUR WORDS']}}
+      
+      
+                  </div>
+      
+      
+                 <div class="entry">
+      
+      
+                <label>IF U COULD GO BACK & CHANGE A MOMENT WHAT WOULD IT BE </label> 
+      
+      
+                 <input type="text" value={{theData['IF U COULD GO BACK & CHANGE A MOMENT WHAT WOULD IT BE ']}}
+      
+      
+                  </div>
+      
+      
+                 <div class="entry">
+      
+      
+                <label>Your idea of Chilling Out.?? </label> 
+      
+      
+                 <input type="text" value={{theData['Your idea of Chilling Out.?? ']}}
+      
+      
+                  </div>
+      
+      
+                  <div class="entry">
+      
+      
+                <label>YOUR BEST FRIEND NAMES </label> 
+      
+      
+                 <input type="text" value={{theData['YOUR BEST FRIEND NAMES ']}}
+      
+      
+                  </div>
+      
+      
+                  <div class="entry">
+      
+      
+                <label>DEFINE OUR FRIENDSHIP  </label> 
+      
+      
+                 <input type="text" value={{theData['DEFINE OUR FRIENDSHIP ']}}
+      
+      
+                  </div>
+      
+      
+                  <div class="entry">
+      
+      
+                <label>DESCRIBE YOUR MOST MEMORABLE EXPERIENCE WITH ME </label> 
+      
+      
+                 <input type="text" value={{theData['DESCRIBE YOUR MOST MEMORABLE EXPERIENCE WITH ME ']}}
+      
+      
+                                   </div>
+      
+      
+                 <div class="entry">
+      
+      
+                <label>A Gift Which you like most </label> 
+      
+      
+                 <input type="text" value={{theData['A Gift Which you like most ']}}
+      
+      
+                                   </div>
+      
+      
+                                   <div class="entry">
+      
+      
+                <label>DECRIBE ME IN YOUR WORDS </label> 
+      
+      
+                 <input type="text" value={{theData['DECRIBE ME IN YOUR WORDS ']}}
+      
+      
+                  </div>
+      
+      
+                                            <div class="entry">
+      
+      
+                <label>Advice For me..! :) </label> 
+      
+      
+                 <input type="text area" value={{theData['Advice For me..! :)']}}
+      
+      
+                  </div>
+      
+      
+                                   
+      
+      
+                <div class="submitarea">
+      
+      
+                  <input type="submit" value="Send" on-click="submitForm">
+      
+      
+                  <!--<input type="reset"  value="Clear"  on-click="resetForm"> <br>    -->
+      
+      
+                  <textarea disabled class="responsetext" value="{{serverResponse}}"></textarea>
+      
+      
+                  <!--<p class="responsetext"> {{serverResponse}} </p>-->
+      
+      
+                </div>
+      
+      
+              </div>
+      
+      
+            </template>
+      
+      
+             <script type="application/dart" src="Jotform.server.com">
+      
+      
+            <script type="application/dart" src="xslambookform.dart">
+      
+      
+            </script>
+      
+      
+          </polymer-element>
+      
+      
+        
+      
+      
+          </body>
+      
+      
+        </html>
